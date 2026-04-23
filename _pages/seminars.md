@@ -11,6 +11,7 @@ CeDEx China runs a regular Brown Bag seminar series during teaching semesters (t
 
 {% assign seminar_items = site.data.seminars | sort: "date" | reverse %}
 
+<div class="table-responsive">
 <table class="table table-sm table-striped">
 	<thead>
 		<tr>
@@ -31,5 +32,6 @@ CeDEx China runs a regular Brown Bag seminar series during teaching semesters (t
 		{% endfor %}
 	</tbody>
 </table>
+</div>
 
 To update this table, edit _data/seminars.yml in the repository.

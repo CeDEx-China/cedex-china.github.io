@@ -4,10 +4,12 @@
       role: Chair, CeDEx Director
       affiliation: University of Nottingham (UK)
       focus: Experimental Economics
+      email: chris.starmer@nottingham.ac.uk
     - name: Professor Shravan Luckraz
       role: Co-chair, Director of CeDEx China
       affiliation: School of Economics, UNNC
       focus: Game Theory and Mathematical Economics
+      email: Shravan.Luckraz@nottingham.edu.cn
 
 - group: Research Leads
   members:
@@ -15,38 +17,47 @@
       role: Research Lead
       affiliation: School of Economics, UNNC
       focus: Quantitative Economics
+      email: Stuart.McDonald@nottingham.edu.cn
     - name: Dr Chee Kian Leong
       role: Research Lead
       affiliation: School of Economics, UNNC
       focus: Games and Decisions
+      email: Chee.Leong@nottingham.edu.cn
     - name: Dr Long Wen
       role: Research Lead
       affiliation: School of Economics, UNNC
       focus: Tourism Economics
+      email: Long.WEN@nottingham.edu.cn
     - name: Dr Marcus Roel
       role: Research Lead
       affiliation: School of Economics, UNNC
       focus: Behavioural and Experimental Economics
+      email: Marcus.Roel@nottingham.edu.cn
     - name: Dr Shuo Yang
       role: Research Lead
       affiliation: School of Economics, UNNC
       focus: Behavioural and Experimental Economics
+      email: Shuo.Yang@nottingham.edu.cn
     - name: Dr Jan Jozwik
       role: Research Lead
       affiliation: School of Economics, UNNC
       focus: Behavioural and Experimental Economics
+      email: Jan.Jozwik@nottingham.edu.cn
     - name: Dr Chen Qu
       role: Research Lead
       affiliation: School of Economics, UNNC
       focus: Game Theory and Economic Theory
+      email: Chen.Qu@nottingham.edu.cn
     - name: Dr Xuewen Qian
       role: Research Lead
       affiliation: School of Economics, UNNC
       focus: Game Theory and Economic Theory
+      email: Xuewen.Qian@nottingham.edu.cn
     - name: Dr Haibo Xu
       role: Research Lead
       affiliation: School of Economics, UNNC
       focus: Game Theory and Economic Theory
+      email: Haibo.Xu@nottingham.edu.cn
 
 - group: Affiliated Faculty
   members:
@@ -54,14 +65,17 @@
       role: Faculty Member
       affiliation: NUBS, University of Nottingham (UK)
       focus: Applied Economics
+      email: Lina.Song@nottingham.ac.uk
     - name: Dr Jose Guinot Saporta
       role: Faculty Member
       affiliation: University of Nottingham (UK)
       focus: Experimental Economics
+      email: jose.guinotsaporta@nottingham.ac.uk
     - name: Dr Saileshsingh Gunessee
       role: Faculty Member
       affiliation: NUBS China, UNNC
       focus: Behavioural Economics
+      email: saileshsingh.gunessee@nottingham.edu.cn
 
 - group: Lab Management
   members:
@@ -69,10 +83,135 @@
       role: Senior Lab Manager
       affiliation: CeDEx China, UNNC
       focus: Laboratory operations and research coordination
+      email: Xingchen.Liu@nottingham.edu.cn
 
-- group: PhD Students and External Fellows
+- group: PhD Students
   members:
-    - name: Contact CeDEx China
-      role: Current roster available by request
-      affiliation: CedexChina@nottingham.edu.cn
-      focus: Please email for the latest list
+    - name: Fangzhe Gu
+      role: PhD Student
+      affiliation: School of Economics, UNNC
+      focus: Fermat-Weber problem, Optimization, Game theory, Graph theory
+      email: Fangzhe.GU@nottingham.edu.cn
+    - name: Juncheng Zhang
+      role: PhD Student
+      affiliation: School of Economics, UNNC
+      focus: Environmental economics
+      email: Juncheng.ZHANG@nottingham.edu.cn
+    - name: Jingyi Shen
+      role: PhD Student
+      affiliation: School of Economics, UNNC
+      focus: Cooperative Game Theory, Financial Economics
+      email: Jingyi.SHEN@nottingham.edu.cn
+    - name: Meiqi Chen
+      role: PhD Student
+      affiliation: School of Economics, UNNC
+      focus: Experimental economics, behavioural economics, social preference, prosocial behaviour
+      email: Meiqi.Chen2@nottingham.edu.cn
+    - name: Siqi Li
+      role: PhD Student
+      affiliation: School of Economics, UNNC
+      focus: Microeconomics
+      email: Siqi.LI2@nottingham.edu.cn
+    - name: Xian Zhang
+      role: PhD Student
+      affiliation: School of Economics, UNNC
+      focus: Agricultural economics, development economics, tourism, poverty-relief policy
+      email: Xian.Zhang@nottingham.edu.cn
+    - name: Zanbo Wang
+      role: PhD Student
+      affiliation: School of Economics, UNNC
+      focus: Microeconomics Theory, Game Theory, Environmental Economics
+      email: Zanbo.WANG@nottingham.edu.cn
+
+- group: External Fellows
+  members:
+    - name: Dr Tom Lane
+      role: Senior Lecturer, Newcastle University; Senior Fellow of CeDEx China
+      affiliation: Newcastle University
+      focus: Law and norms, experimental economics
+      email: Tom.Lane@newcastle.ac.uk
+    - name: Professor Armenak Antinyan
+      role: Professor; Fellow of CeDEx China
+      affiliation: Zhongnan University of Economics and Law
+      focus: Experimental and behavioural economics
+      email: antinyan.armenak@gmail.com
+    - name: Dr Cheng (Elvis) Xu
+      role: Assistant Professor; Fellow of CeDEx China
+      affiliation: Xi'an Jiaotong-Liverpool University
+      focus: Experimental economics
+      email: Cheng.Xu@xjtlu.edu.cn
+    - name: Dr Cindy Fu
+      role: Lecturer; Fellow of CeDEx China
+      affiliation: National University of Singapore
+      focus: Experimental economics
+      email: jingcheng.fu@nus.edu.sg
+    - name: Professor David Kelsey
+      role: Professor of Industrial Economics; Fellow of CeDEx China
+      affiliation: University of Nottingham (UK)
+      focus: Industrial economics
+      email: david.kelsey@nottingham.ac.uk
+    - name: Dr Dawei Wei
+      role: Associate Professor; Fellow of CeDEx China
+      affiliation: Lanzhou Jiaotong University
+      focus: Applied Linguistics, Psycholinguistics
+      email: dawei.wei@nottingham.edu.cn
+    - name: Dr Di Wang
+      role: Assistant Professor; Fellow of CeDEx China
+      affiliation: Southwestern University of Finance and Economics
+      focus: Experimental economics
+      email: wangd@swufe.edu.cn
+    - name: Dr Hamid Reza Daneshpajouh
+      role: Assistant Professor in Applied Mathematics; Fellow of CeDEx China
+      affiliation: School of Mathematics, UNNC
+      focus: Applied Mathematics, Statistics
+      email: Hamid-Reza.Daneshpajouh@nottingham.edu.cn
+    - name: Dr Jae Joon Lee
+      role: Assistant Professor in Economics; Fellow of CeDEx China
+      affiliation: Department of Finance, Accounting and Economics, UNNC
+      focus: Economics
+      email: Jae-Joon.Lee@nottingham.edu.cn
+    - name: Dr Lian Xue
+      role: Assistant Professor; Fellow of CeDEx China
+      affiliation: Wuhan University
+      focus: Experimental economics
+      email: LianXue721@163.com
+    - name: Dr Lingbo Huang
+      role: Professor of Economics; Fellow of CeDEx China
+      affiliation: Shandong University
+      focus: Experimental economics
+      email: lingbo.huang@outlook.com
+    - name: Dr Lu Dong
+      role: Associate Professor; Fellow of CeDEx China
+      affiliation: SUSTech Business School
+      focus: Experimental economics
+      email: donglu@sustech.edu.cn
+    - name: Dr Simin He
+      role: Associate Professor; Fellow of CeDEx China
+      affiliation: Shanghai University of Finance and Economics
+      focus: Experimental economics
+      email: he.simin@mail.shufe.edu.cn
+    - name: Dr Sookie Zhang
+      role: Assistant Professor; Fellow of CeDEx China
+      affiliation: Zhongnan University of Economics and Law
+      focus: Experimental economics
+      email: sookie.xue.zhang@outlook.com
+    - name: Dr Wilfred Chow
+      role: Assistant Professor in International Studies; Fellow of CeDEx China
+      affiliation: School of International Studies, UNNC
+      focus: International studies
+      email: Wilfred.Chow@nottingham.edu.cn
+    - name: Dr Xueheng Li
+      role: Assistant Professor; Fellow of CeDEx China
+      affiliation: Nanjing Audit University
+      focus: Experimental economics
+      email: xueheng.li@outlook.com
+    - name: Dr Youzong Xu
+      role: Assistant Professor in Economics; Fellow of CeDEx China
+      affiliation: Department of Finance, Accounting and Economics, UNNC
+      focus: Economics
+      email: Youzong.Xu@nottingham.edu.cn
+    - name: Dr Zhixian Yu
+      role: Assistant Professor in Economics; Fellow of CeDEx China
+      affiliation: Department of Finance, Accounting and Economics, UNNC
+      focus: Economics
+      email: Zhixian.Yu@nottingham.edu.cn
