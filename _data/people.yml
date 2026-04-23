@@ -1,0 +1,78 @@
+- group: Leadership
+  members:
+    - name: Professor Chris Starmer
+      role: Chair, CeDEx Director
+      affiliation: University of Nottingham (UK)
+      focus: Experimental Economics
+    - name: Professor Shravan Luckraz
+      role: Co-chair, Director of CeDEx China
+      affiliation: School of Economics, UNNC
+      focus: Game Theory and Mathematical Economics
+
+- group: Research Leads
+  members:
+    - name: Dr Stuart McDonald
+      role: Research Lead
+      affiliation: School of Economics, UNNC
+      focus: Quantitative Economics
+    - name: Dr Chee Kian Leong
+      role: Research Lead
+      affiliation: School of Economics, UNNC
+      focus: Games and Decisions
+    - name: Dr Long Wen
+      role: Research Lead
+      affiliation: School of Economics, UNNC
+      focus: Tourism Economics
+    - name: Dr Marcus Roel
+      role: Research Lead
+      affiliation: School of Economics, UNNC
+      focus: Behavioural and Experimental Economics
+    - name: Dr Shuo Yang
+      role: Research Lead
+      affiliation: School of Economics, UNNC
+      focus: Behavioural and Experimental Economics
+    - name: Dr Jan Jozwik
+      role: Research Lead
+      affiliation: School of Economics, UNNC
+      focus: Behavioural and Experimental Economics
+    - name: Dr Chen Qu
+      role: Research Lead
+      affiliation: School of Economics, UNNC
+      focus: Game Theory and Economic Theory
+    - name: Dr Xuewen Qian
+      role: Research Lead
+      affiliation: School of Economics, UNNC
+      focus: Game Theory and Economic Theory
+    - name: Dr Haibo Xu
+      role: Research Lead
+      affiliation: School of Economics, UNNC
+      focus: Game Theory and Economic Theory
+
+- group: Affiliated Faculty
+  members:
+    - name: Professor Lina Song
+      role: Faculty Member
+      affiliation: NUBS, University of Nottingham (UK)
+      focus: Applied Economics
+    - name: Dr Jose Guinot Saporta
+      role: Faculty Member
+      affiliation: University of Nottingham (UK)
+      focus: Experimental Economics
+    - name: Dr Saileshsingh Gunessee
+      role: Faculty Member
+      affiliation: NUBS China, UNNC
+      focus: Behavioural Economics
+
+- group: Lab Management
+  members:
+    - name: Mr Xingchen Liu
+      role: Senior Lab Manager
+      affiliation: CeDEx China, UNNC
+      focus: Laboratory operations and research coordination
+
+- group: PhD Students and External Fellows
+  members:
+    - name: Contact CeDEx China
+      role: Current roster available by request
+      affiliation: CedexChina@nottingham.edu.cn
+      focus: Please email for the latest list

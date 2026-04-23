@@ -1,0 +1,40 @@
+lang: en
+title: CeDEx China
+description: Centre for Decision Research and Experimental Economics (China)
+url: "https://cedex-china.github.io"
+baseurl: ""
+email: CedexChina@nottingham.edu.cn
+timezone: Asia/Shanghai
+markdown: kramdown
+permalink: pretty
+
+remote_theme: alshedivat/al-folio
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-remote-theme
+  - jekyll-scholar
+  - jekyll-socials
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
+  - scope:
+      type: pages
+    values:
+      layout: page
+
+collections:
+  pages:
+    output: true
+
+include:
+  - _pages
+
+exclude:
+  - vendor
+  - node_modules
