@@ -28,10 +28,6 @@ defaults:
     values:
       layout: page
 
-collections:
-  pages:
-    output: true
-
 include:
   - _pages
 

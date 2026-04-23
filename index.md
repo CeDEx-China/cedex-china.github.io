@@ -29,7 +29,7 @@ At UNNC, we combine theory and experiments to support research, policy engagemen
 - [Meet the Team]({{ '/people/' | relative_url }})
 - [Research and Publications]({{ '/research/' | relative_url }})
 - [Brown Bag Seminars]({{ '/seminars/' | relative_url }})
-- [Annual Conference](https://www.nottingham.edu.cn/en/humanities-and-social-sciences/schools-and-department/economics/research/research-centres/cedex-china/home.aspx)
+- [Annual Conference](https://cedex-china.github.io/conference/)
 - [Join an Experiment]({{ '/lab/' | relative_url }})
 - [Summer School Programmes]({{ '/summer-school/' | relative_url }})
 
