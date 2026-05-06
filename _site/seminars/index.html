@@ -172,7 +172,7 @@
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm sticky-top" role="navigation">
     <div class="container">
-      <a class="navbar-brand title font-weight-lighter" href="/">
+      <a class="navbar-brand title " href="/">
         CeDEx China
       </a>
       <!-- Navbar Toggle -->
@@ -298,69 +298,140 @@
   </header>
 
   <article>
-    <p>CeDEx China runs a regular Brown Bag seminar series during teaching semesters (typically 12:30-14:00).</p>
+    <p>CeDEx China runs a regular Brown Bag seminar series during teaching semesters (typically 12:30–14:00).</p>
 
-<h2 id="recent-seminars">Recent Seminars</h2>
+<div class="seminar-timeline mt-4">
 
-<div class="table-responsive">
-<table class="table table-sm table-striped">
-	<thead>
-		<tr>
-			<th>Date</th>
-			<th>Speaker</th>
-			<th>Affiliation</th>
-			<th>Title</th>
-		</tr>
-	</thead>
-	<tbody>
-		
-		<tr>
-			<td>8 April 2026</td>
-			<td>Dr Tom Lane</td>
-			<td>Newcastle Business School</td>
-			<td>Law and Norms in Multicultural Societies</td>
-		</tr>
-		
-		<tr>
-			<td>28 January 2026</td>
-			<td>Professor Jaimie W. Lien</td>
-			<td>Shandong University</td>
-			<td>Self-Commitment for Cooperation</td>
-		</tr>
-		
-		<tr>
-			<td>28 January 2026</td>
-			<td>Professor Jie Zheng</td>
-			<td>Shandong University</td>
-			<td>Strategic Commitment and Legal Enforcement in Dynamic Matching</td>
-		</tr>
-		
-		<tr>
-			<td>19 November 2025</td>
-			<td>Dr Xiaoqi Xu</td>
-			<td>Southwestern University of Finance and Economics</td>
-			<td>Entry Deterrence Through Strategic Trading</td>
-		</tr>
-		
-		<tr>
-			<td>12 November 2025</td>
-			<td>Mr Bozhong Zheng</td>
-			<td>Tsinghua University</td>
-			<td>Form vs Information: The Regimes of Data Property Rights</td>
-		</tr>
-		
-		<tr>
-			<td>5 November 2025</td>
-			<td>Dr Yige Duan</td>
-			<td>Shanghai Jiao Tong University</td>
-			<td>Beyond Lost Earnings: Job Displacement and the Cost of Commuting</td>
-		</tr>
-		
-	</tbody>
-</table>
+
+  
+  
+    
+  <div class="seminar-year-label">2026</div>
+  
+  <div class="seminar-entry">
+    <div class="seminar-date">8 Apr</div>
+    <div class="seminar-content">
+      <div class="seminar-title">Law and Norms in Multicultural Societies</div>
+      <div class="seminar-speaker">Dr Tom Lane<span class="seminar-affiliation"> · Newcastle Business School</span></div>
+    </div>
+  </div>
+
+  
+  
+  <div class="seminar-entry">
+    <div class="seminar-date">28 Jan</div>
+    <div class="seminar-content">
+      <div class="seminar-title">Self-Commitment for Cooperation</div>
+      <div class="seminar-speaker">Professor Jaimie W. Lien<span class="seminar-affiliation"> · Shandong University</span></div>
+    </div>
+  </div>
+
+  
+  
+  <div class="seminar-entry">
+    <div class="seminar-date">28 Jan</div>
+    <div class="seminar-content">
+      <div class="seminar-title">Strategic Commitment and Legal Enforcement in Dynamic Matching</div>
+      <div class="seminar-speaker">Professor Jie Zheng<span class="seminar-affiliation"> · Shandong University</span></div>
+    </div>
+  </div>
+
+  
+  
+    
+  <div class="seminar-year-label">2025</div>
+  
+  <div class="seminar-entry">
+    <div class="seminar-date">19 Nov</div>
+    <div class="seminar-content">
+      <div class="seminar-title">Entry Deterrence Through Strategic Trading</div>
+      <div class="seminar-speaker">Dr Xiaoqi Xu<span class="seminar-affiliation"> · Southwestern University of Finance and Economics</span></div>
+    </div>
+  </div>
+
+  
+  
+  <div class="seminar-entry">
+    <div class="seminar-date">12 Nov</div>
+    <div class="seminar-content">
+      <div class="seminar-title">Form vs Information: The Regimes of Data Property Rights</div>
+      <div class="seminar-speaker">Mr Bozhong Zheng<span class="seminar-affiliation"> · Tsinghua University</span></div>
+    </div>
+  </div>
+
+  
+  
+  <div class="seminar-entry">
+    <div class="seminar-date">5 Nov</div>
+    <div class="seminar-content">
+      <div class="seminar-title">Beyond Lost Earnings: Job Displacement and the Cost of Commuting</div>
+      <div class="seminar-speaker">Dr Yige Duan<span class="seminar-affiliation"> · Shanghai Jiao Tong University</span></div>
+    </div>
+  </div>
+
 </div>
 
-<p>To update this table, edit _data/seminars.yml in the repository.</p>
+<style>
+.seminar-timeline {
+  border-left: 2px solid var(--global-divider-color);
+  margin-left: 0.5rem;
+}
+.seminar-year-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--global-text-color-light);
+  margin: 1.5rem 0 0.5rem -0.6rem;
+  padding-left: 1rem;
+}
+.seminar-entry {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.65rem 0 0.65rem 1rem;
+  border-bottom: 1px solid var(--global-divider-color);
+  margin-left: -1px;
+  position: relative;
+}
+.seminar-entry::before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 1.1rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--global-theme-color);
+}
+.seminar-date {
+  min-width: 3.8rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--global-theme-color);
+  flex-shrink: 0;
+}
+.seminar-content {
+  flex: 1;
+}
+.seminar-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--global-text-color);
+  line-height: 1.35;
+}
+.seminar-speaker {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--global-text-color);
+  margin-top: 0.15rem;
+}
+.seminar-affiliation {
+  font-weight: 400;
+  color: var(--global-text-color-light);
+}
+</style>
+
 
   </article>
 
