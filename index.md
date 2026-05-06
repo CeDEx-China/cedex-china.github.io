@@ -5,14 +5,16 @@ nav: true
 nav_order: 1
 ---
 
-## Welcome to CeDEx China
+<div style="margin: 1.5rem -15px 2rem; overflow: hidden; border-radius: 6px;">
+  <img src="{{ '/assets/img/hero.jpg' | relative_url }}"
+       alt="University of Nottingham Ningbo China"
+       style="width: 100%; height: 240px; object-fit: cover; object-position: center 40%; display: block;">
+</div>
 
-CeDEx China is part of the Centre for Decision Research and Experimental Economics (CeDEx) and focuses on how people make decisions.
+CeDEx China is part of the Centre for Decision Research and Experimental Economics (CeDEx) and focuses on how people make decisions. At UNNC, we combine theory and experiments to support research, policy engagement, and student training.
 
-At UNNC, we combine theory and experiments to support research, policy engagement, and student training.
-
-<div class="row mt-3">
-<div class="col-12 col-md-6 mb-3" markdown="1">
+<div class="row mt-4">
+<div class="col-12 col-md-6 mb-4" markdown="1">
 
 ### Focus Areas
 
@@ -22,7 +24,7 @@ At UNNC, we combine theory and experiments to support research, policy engagemen
 - Data-driven and policy-relevant research
 
 </div>
-<div class="col-12 col-md-6 mb-3" markdown="1">
+<div class="col-12 col-md-6 mb-4" markdown="1">
 
 ### Quick Access
 

@@ -3,6 +3,7 @@ title: CeDEx China
 description: Centre for Decision Research and Experimental Economics (China)
 url: "https://cedex-china.github.io"
 baseurl: ""
+icon: favicon.ico
 email: CedexChina@nottingham.edu.cn
 timezone: Asia/Shanghai
 markdown: kramdown

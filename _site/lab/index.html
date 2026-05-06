@@ -16,7 +16,7 @@
   
   
     
-      CeDEx Lab | CeDEx China
+      Lab | CeDEx China
     
   
 </title>
@@ -77,8 +77,10 @@
 
 
 
+  <link rel="shortcut icon" href="/assets/img/favicon.ico">
+
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="https://cedex-china.github.io/lab/">
+<link rel="canonical" href="http://0.0.0.0:4000/lab/">
 
 
 
@@ -97,15 +99,82 @@
   <!-- Body -->
   <body class=" sticky-bottom-footer">
     <!-- Header -->
-    <header>
+    <style>
+  /* Always reserve scrollbar gutter space to prevent layout shift on page transitions */
+  html {
+    overflow-y: scroll; /* fallback for older browsers */
+    scrollbar-gutter: stable; /* modern: reserves space without forcing visible track */
+  }
+
+  /* ── Typography ──────────────────────────────────────────────────────────
+     Inter for UI/body (optimised screen legibility), Georgia for long prose.
+     Font stack follows system-ui best practice with Inter as first web font.
+  ── */
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+  body {
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+                 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1rem;           /* 16px base */
+    font-weight: 400;          /* Regular — Inter 400 is readable at 16px+ */
+    line-height: 1.7;          /* comfortable reading rhythm */
+    font-synthesis: none;      /* prevent browser from faking bold/italic */
+    font-feature-settings: 'kern' 1, 'liga' 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Headings: SemiBold with tight tracking */
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    line-height: 1.25;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+
+  /* Nav links: Medium weight for UI clarity */
+  #navbar .nav-link,
+  #navbar .navbar-brand {
+    font-weight: 500;
+  }
+
+  /* Tab labels: Medium */
+  .nav-tabs .nav-link {
+    font-weight: 500;
+  }
+
+  /* ── Tables ──────────────────────────────────────────────────────────────
+     Reduce table font to 0.85rem (≈13.6px) for data-dense views while
+     keeping body copy at 1rem.
+  ── */
+  table, .table {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+  table th, .table th {
+    font-weight: 600;
+  }
+  table td, .table td {
+    font-weight: 400;
+  }
+
+  body.sticky-bottom-footer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  body.sticky-bottom-footer > [role="main"] {
+    flex: 1 0 auto;
+  }
+</style>
+
+<header>
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm sticky-top" role="navigation">
     <div class="container">
-      
-        <a class="navbar-brand title font-weight-lighter" href="/">
-          CeDEx China
-        </a>
-      
+      <a class="navbar-brand title font-weight-lighter" href="/">
+        CeDEx China
+      </a>
       <!-- Navbar Toggle -->
       <button
         class="navbar-toggler collapsed ml-auto"
@@ -187,7 +256,7 @@
               
                 
                 <li class="nav-item active">
-                  <a class="nav-link"  href="/lab/">CeDEx Lab
+                  <a class="nav-link"  href="/lab/">Lab
                     
                       <span class="sr-only">(current)</span>
                     
@@ -224,44 +293,75 @@
 
 <div class="post">
   <header class="post-header">
-    <h1 class="post-title">CeDEx Lab</h1>
+    <h1 class="post-title">Lab</h1>
     <p class="post-description"></p>
   </header>
 
   <article>
     <p>CeDEx Lab studies how people make decisions through controlled experiments.</p>
 
-<h2 id="why-join">Why Join</h2>
-
-<ul>
-  <li>Participation directly supports scientific research</li>
-  <li>Most sessions are engaging and typically last under one hour</li>
-  <li>Participants receive payment for their time, with potential additional earnings based on choices and outcomes</li>
+<ul class="nav nav-tabs mt-4" id="labTabs" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="participants-tab" data-toggle="tab" href="#participants" role="tab" aria-controls="participants" aria-selected="true">For Participants</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="experimenters-tab" data-toggle="tab" href="#experimenters" role="tab" aria-controls="experimenters" aria-selected="false">For Experimenters</a>
+  </li>
 </ul>
 
-<h2 id="who-can-participate">Who Can Participate</h2>
+<div class="tab-content mt-3" id="labTabContent">
 
-<p>All current UNNC students are welcome. No specific academic background or year-of-study restriction is required.</p>
+<div class="tab-pane fade show active" id="participants" role="tabpanel" aria-labelledby="participants-tab">
 
-<h2 id="how-to-register">How to Register</h2>
+    <h2 id="why-join">Why Join</h2>
 
-<ol>
-  <li>Register on ORSEE: <a href="http://orsee.nottingham.edu.cn/public/participant_create.php">http://orsee.nottingham.edu.cn/public/participant_create.php</a></li>
-  <li>Use your official UNNC email address (ending with @nottingham.edu.cn)</li>
-  <li>Activate your account through the confirmation email</li>
-  <li>Enable invitations for both laboratory and internet experiments</li>
-</ol>
+    <ul>
+      <li>Contribute to behavioral and economic research at UNNC</li>
+      <li>Sessions run under one hour</li>
+      <li>Earn a show-up fee plus performance-based bonuses</li>
+    </ul>
 
-<h2 id="important-notes">Important Notes</h2>
+    <h2 id="who-can-participate">Who Can Participate</h2>
 
-<ul>
-  <li>ORSEE access is limited to the UNNC teaching area (campus desktop or eduroam connection)</li>
-  <li>All studies obtain ethics approval before participation</li>
-  <li>Data are used anonymously for scientific research</li>
-  <li>Registration does not commit you to any specific study and you can deregister at any time</li>
-</ul>
+    <p>Open to all current UNNC students — no background or experience required.</p>
 
-<p>For volunteer-related questions, contact <a href="mailto:CedexChina@nottingham.edu.cn">CedexChina@nottingham.edu.cn</a>.</p>
+    <h2 id="how-to-register">How to Register</h2>
+
+    <ol>
+      <li>Register on ORSEE: <a href="http://orsee.nottingham.edu.cn/public/participant_create.php">orsee.nottingham.edu.cn</a></li>
+      <li>Use your official UNNC email address (ending with @nottingham.edu.cn)</li>
+      <li>Activate your account through the confirmation email</li>
+      <li>Enable invitations for both laboratory and internet experiments</li>
+    </ol>
+
+    <h2 id="important-notes">Important Notes</h2>
+
+    <ul>
+      <li>ORSEE access requires UNNC campus network (campus desktop or eduroam)</li>
+      <li>All studies obtain ethics approval before participation</li>
+      <li>Data are collected and used anonymously</li>
+      <li>Registration does not commit you to any study — you can deregister at any time</li>
+    </ul>
+
+    <p>For questions, contact <a href="mailto:CedexChina@nottingham.edu.cn">CedexChina@nottingham.edu.cn</a>.</p>
+
+  </div>
+
+<div class="tab-pane fade" id="experimenters" role="tabpanel" aria-labelledby="experimenters-tab">
+
+    <h2 id="book-the-lab">Book the Lab</h2>
+
+    <p>CeDEx Lab provides a dedicated environment for running controlled experiments at UNNC.</p>
+
+    <p>To request a session, submit the booking form below.</p>
+
+    <p><a href="https://forms.office.com/r/hLWm2bfuvq" class="btn btn-sm btn-outline-primary mt-2 mb-3">Request a Session →</a></p>
+
+    <p>For questions, contact <a href="mailto:CedexChina@nottingham.edu.cn">CedexChina@nottingham.edu.cn</a>.</p>
+
+  </div>
+
+</div>
 
   </article>
 

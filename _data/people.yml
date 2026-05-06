@@ -1,4 +1,4 @@
-- group: Leadership
+﻿- group: Leadership
   members:
     - name: Professor Chris Starmer
       role: Chair, CeDEx Director
@@ -59,32 +59,6 @@
       focus: Game Theory and Economic Theory
       email: Haibo.Xu@nottingham.edu.cn
 
-- group: Affiliated Faculty
-  members:
-    - name: Professor Lina Song
-      role: Faculty Member
-      affiliation: NUBS, University of Nottingham (UK)
-      focus: Applied Economics
-      email: Lina.Song@nottingham.ac.uk
-    - name: Dr Jose Guinot Saporta
-      role: Faculty Member
-      affiliation: University of Nottingham (UK)
-      focus: Experimental Economics
-      email: jose.guinotsaporta@nottingham.ac.uk
-    - name: Dr Saileshsingh Gunessee
-      role: Faculty Member
-      affiliation: NUBS China, UNNC
-      focus: Behavioural Economics
-      email: saileshsingh.gunessee@nottingham.edu.cn
-
-- group: Lab Management
-  members:
-    - name: Mr Xingchen Liu
-      role: Senior Lab Manager
-      affiliation: CeDEx China, UNNC
-      focus: Laboratory operations and research coordination
-      email: Xingchen.Liu@nottingham.edu.cn
-
 - group: PhD Students
   members:
     - name: Fangzhe Gu
@@ -122,6 +96,24 @@
       affiliation: School of Economics, UNNC
       focus: Microeconomics Theory, Game Theory, Environmental Economics
       email: Zanbo.WANG@nottingham.edu.cn
+
+- group: Affiliated Faculty
+  members:
+    - name: Professor Lina Song
+      role: Faculty Member
+      affiliation: NUBS, University of Nottingham (UK)
+      focus: Applied Economics
+      email: Lina.Song@nottingham.ac.uk
+    - name: Dr Jose Guinot Saporta
+      role: Faculty Member
+      affiliation: University of Nottingham (UK)
+      focus: Experimental Economics
+      email: jose.guinotsaporta@nottingham.ac.uk
+    - name: Dr Saileshsingh Gunessee
+      role: Faculty Member
+      affiliation: NUBS China, UNNC
+      focus: Behavioural Economics
+      email: saileshsingh.gunessee@nottingham.edu.cn
 
 - group: External Fellows
   members:
@@ -215,3 +207,11 @@
       affiliation: Department of Finance, Accounting and Economics, UNNC
       focus: Economics
       email: Zhixian.Yu@nottingham.edu.cn
+
+- group: Lab Management
+  members:
+    - name: Mr Xingchen Liu
+      role: Senior Lab Manager
+      affiliation: CeDEx China, UNNC
+      focus: Laboratory operations and research coordination
+      email: Xingchen.Liu@nottingham.edu.cn 
