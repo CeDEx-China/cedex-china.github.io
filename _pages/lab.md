@@ -7,6 +7,54 @@ nav_order: 6
 
 CeDEx Lab studies how people make decisions through controlled experiments.
 
+<style>
+.cedex-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin-top: 1.5rem;
+  border-bottom: 2px solid var(--global-divider-color, #e0e0e0);
+  padding-bottom: 0;
+  list-style: none;
+  padding-left: 0;
+}
+.cedex-tabs li {
+  margin-bottom: -2px;
+}
+.cedex-tab-btn {
+  display: inline-block;
+  padding: 0.5rem 1.1rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--global-text-color-light, #777);
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-bottom: none;
+  border-radius: 6px 6px 0 0;
+  transition: all 0.2s ease;
+  user-select: none;
+  background: transparent;
+  text-decoration: none;
+}
+.cedex-tab-btn:hover {
+  color: var(--global-theme-color, #b509ac);
+  background: rgba(0,0,0,0.03);
+}
+.cedex-tab-btn.active {
+  color: var(--global-theme-color, #b509ac);
+  border-color: var(--global-divider-color, #e0e0e0);
+  border-bottom-color: var(--global-bg-color, #fff);
+  background: var(--global-bg-color, #fff);
+}
+.cedex-panel {
+  display: none;
+  margin-top: 1.5rem;
+}
+.cedex-panel.active {
+  display: block;
+}
+</style>
+
 <ul class="cedex-tabs" id="labTabs" role="tablist">
   <li role="none">
     <button class="cedex-tab-btn active" id="participants-tab" role="tab" aria-selected="true" data-tab="participants" onclick="switchLabTab('participants')">For Participants</button>

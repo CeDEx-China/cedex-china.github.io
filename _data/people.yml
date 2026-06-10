@@ -197,6 +197,11 @@
       affiliation: Nanjing Audit University
       focus: Experimental economics
       email: xueheng.li@outlook.com
+    - name: Assoc Prof Jonathan Tan
+      role: Associate Chair (Academic), Associate Professor; Fellow of CeDEx China
+      affiliation: School of Social Sciences, Nanyang Technological University
+      focus: Behavioral Economics, Behavioral Game Theory
+      email: j.tan@ntu.edu.sg
     - name: Dr Youzong Xu
       role: Assistant Professor in Economics; Fellow of CeDEx China
       affiliation: Department of Finance, Accounting and Economics, UNNC
@@ -207,11 +212,6 @@
       affiliation: Department of Finance, Accounting and Economics, UNNC
       focus: Economics
       email: Zhixian.Yu@nottingham.edu.cn
-    - name: Dr Jonathan Tan
-      role: Associate Professor, Nanyang Technological University; Fellow of CeDEx China
-      affiliation: School of Social Sciences, Nanyang Technological University
-      focus: Behavioural Economics, Behavioural Game Theory
-      email: j.tan@ntu.edu.sg
 
 - group: Lab Management
   members:
