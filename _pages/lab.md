@@ -7,18 +7,18 @@ nav_order: 6
 
 CeDEx Lab studies how people make decisions through controlled experiments.
 
-<ul class="nav nav-tabs mt-4" id="labTabs" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link active" id="participants-tab" data-toggle="tab" href="#participants" role="tab" aria-controls="participants" aria-selected="true">For Participants</a>
+<ul class="cedex-tabs" id="labTabs" role="tablist">
+  <li role="none">
+    <button class="cedex-tab-btn active" id="participants-tab" role="tab" aria-selected="true" data-tab="participants" onclick="switchLabTab('participants')">For Participants</button>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" id="experimenters-tab" data-toggle="tab" href="#experimenters" role="tab" aria-controls="experimenters" aria-selected="false">For Experimenters</a>
+  <li role="none">
+    <button class="cedex-tab-btn" id="experimenters-tab" role="tab" aria-selected="false" data-tab="experimenters" onclick="switchLabTab('experimenters')">For Experimenters</button>
   </li>
 </ul>
 
-<div class="tab-content mt-3" id="labTabContent">
+<div class="cedex-tab-content mt-3" id="labTabContent">
 
-<div class="tab-pane fade show active" id="participants" role="tabpanel" aria-labelledby="participants-tab" markdown="1">
+<div class="cedex-panel active" id="participants" role="tabpanel" aria-labelledby="participants-tab" markdown="1">
 
 ## Why Join
 
@@ -48,7 +48,7 @@ For questions, contact [CedexChina@nottingham.edu.cn](mailto:CedexChina@nottingh
 
 </div>
 
-<div class="tab-pane fade" id="experimenters" role="tabpanel" aria-labelledby="experimenters-tab" markdown="1">
+<div class="cedex-panel" id="experimenters" role="tabpanel" aria-labelledby="experimenters-tab" markdown="1">
 
 ## Book the Lab
 
@@ -63,3 +63,24 @@ For questions, contact [CedexChina@nottingham.edu.cn](mailto:CedexChina@nottingh
 </div>
 
 </div>
+
+<script>
+function switchLabTab(tabId) {
+  document.querySelectorAll('#labTabs .cedex-tab-btn').forEach(function(btn) {
+    btn.classList.remove('active');
+    btn.setAttribute('aria-selected', 'false');
+  });
+  document.querySelectorAll('#labTabContent .cedex-panel').forEach(function(panel) {
+    panel.classList.remove('active');
+  });
+  var activeBtn = document.querySelector('#labTabs [data-tab="' + tabId + '"]');
+  var activePanel = document.getElementById(tabId);
+  if (activeBtn) {
+    activeBtn.classList.add('active');
+    activeBtn.setAttribute('aria-selected', 'true');
+  }
+  if (activePanel) {
+    activePanel.classList.add('active');
+  }
+}
+</script>

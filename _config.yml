@@ -8,7 +8,6 @@ email: CedexChina@nottingham.edu.cn
 timezone: Asia/Shanghai
 markdown: kramdown
 permalink: pretty
-
 theme: al_folio_core
 
 # al-folio theme configuration
@@ -25,7 +24,7 @@ al_folio:
     allow_remote_loader: false
   compat:
     bootstrap:
-      enabled: true
+      enabled: false
 
 plugins:
   - jekyll-feed
@@ -38,7 +37,6 @@ plugins:
   - al_folio_cv
   - al_folio_distill
   - al_folio_upgrade
-  - al_folio_bootstrap_compat
   - al_cookie
   - al_analytics
   - al_citations
