@@ -3,21 +3,52 @@ title: CeDEx China
 description: Centre for Decision Research and Experimental Economics (China)
 url: "https://cedex-china.github.io"
 baseurl: ""
-icon: favicon.ico
+favicon: /assets/img/favicon.ico
 email: CedexChina@nottingham.edu.cn
 timezone: Asia/Shanghai
 markdown: kramdown
 permalink: pretty
 
-remote_theme: alshedivat/al-folio
+theme: al_folio_core
+
+# al-folio theme configuration
+al_folio:
+  api_version: 1
+  style_engine: tailwind
+  tailwind:
+    version: 3
+    preflight: false
+    css_entry: assets/css/tailwind.css
+  distill:
+    engine: liquid
+    source: _distill
+    allow_remote_loader: false
+  compat:
+    bootstrap:
+      enabled: true
 
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-remote-theme
   - jekyll-scholar
   - jekyll-socials
+  - al_folio_core
+  - al_icons
+  - al_folio_cv
+  - al_folio_distill
+  - al_folio_upgrade
+  - al_folio_bootstrap_compat
+  - al_cookie
+  - al_analytics
+  - al_citations
+  - al_ext_posts
+  - al_img_tools
+  - al_search
+  - al_charts
+  - al_math
+  - al_comments
+  - al_newsletter
 
 defaults:
   - scope:
