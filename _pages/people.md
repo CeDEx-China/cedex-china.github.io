@@ -51,7 +51,7 @@ CeDEx China brings together researchers, faculty members, and lab management wit
   margin-top: 1.5rem;
 }
 .cedex-panel.active {
-  display: block;
+  display: block; 
 }
 .cedex-person-grid {
   display: grid;
