@@ -84,6 +84,13 @@ CeDEx China brings together researchers, faculty members, and lab management wit
   color: var(--global-text-color, #333);
   margin: 0;
 }
+.cedex-stage-heading {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--global-theme-color, #b509ac);
+  margin: 1.5rem 0 0.15rem 0;
+  padding-bottom: 0.15rem;
+}
 </style>
 
 <ul class="cedex-tabs" role="tablist">
@@ -105,6 +112,51 @@ CeDEx China brings together researchers, faculty members, and lab management wit
 {% for section in site.data.people %}
 {% assign tab_id = section.group | slugify %}
 <div class="cedex-panel {% if forloop.first %}active{% endif %}" id="{{ tab_id }}" role="tabpanel" aria-labelledby="{{ tab_id }}-tab">
+
+  {% if section.group == "PhD Students" %}
+    {% assign stage_order = "First-Year|Continuing|Thesis Writer|Job Market" | split: "|" %}
+
+    {% for stage_key in stage_order %}
+      {% assign group_members = section.members | where: "stage", stage_key %}
+      {% if group_members.size > 0 %}
+      <h3 class="cedex-stage-heading">{{ stage_key }}</h3>
+      <div class="cedex-person-grid">
+        {% for person in group_members %}
+        <div class="cedex-person-card">
+          <p class="cedex-person-name">
+            {{ person.name }}{% if person.email %}&nbsp;<a href="mailto:{{ person.email }}" title="{{ person.email }}" style="font-size:0.85em;">✉️</a>{% endif %}
+          </p>
+          <p class="cedex-person-role">{{ person.role }}</p>
+          <p class="cedex-person-affil">{{ person.affiliation }}</p>
+          {% if person.focus %}
+          <p class="cedex-person-focus">{{ person.focus }}</p>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+    {% endfor %}
+
+    {% assign unlabeled = section.members | where_exp: "m", "m.stage == nil" %}
+    {% if unlabeled.size > 0 %}
+    <div class="cedex-person-grid">
+      {% for person in unlabeled %}
+      <div class="cedex-person-card">
+        <p class="cedex-person-name">
+          {{ person.name }}{% if person.email %}&nbsp;<a href="mailto:{{ person.email }}" title="{{ person.email }}" style="font-size:0.85em;">✉️</a>{% endif %}
+        </p>
+        <p class="cedex-person-role">{{ person.role }}</p>
+        <p class="cedex-person-affil">{{ person.affiliation }}</p>
+        {% if person.focus %}
+        <p class="cedex-person-focus">{{ person.focus }}</p>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+  {% else %}
+
   <div class="cedex-person-grid">
     {% for person in section.members %}
     <div class="cedex-person-card">
@@ -119,10 +171,14 @@ CeDEx China brings together researchers, faculty members, and lab management wit
     </div>
     {% endfor %}
   </div>
+
+  {% endif %}
 </div>
 {% endfor %}
 
 <script>
+ 
+
 function switchPeopleTab(tabId) {
   document.querySelectorAll('.cedex-tab-btn').forEach(function(btn) {
     btn.classList.remove('active');
@@ -139,6 +195,7 @@ function switchPeopleTab(tabId) {
   }
   if (panel) {
     panel.classList.add('active');
+    fitPanelHeight();
   }
   history.replaceState(null, '', '#people-' + tabId);
 }
@@ -147,6 +204,8 @@ function switchPeopleTab(tabId) {
   var hash = location.hash.replace('#people-', '');
   if (hash && document.getElementById(hash + '-tab')) {
     switchPeopleTab(hash);
+  } else {
+    fitPanelHeight();
   }
 })();
 </script>

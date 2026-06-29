@@ -1,3 +1,13 @@
+- date: 2026-06-17
+  event: Workshop on Discrete Mathematics, Game Theory and Optimization
+  speakers:
+    - name: Dr Zhongzheng Tang
+      affiliation: Beijing Univ. of Posts &amp; Telecom.
+      title: "Welfare-Maximizing Budget-Balanced Mechanisms for Public Goods"
+    - name: Dr Uwe Schauz
+      affiliation: Xi'an Jiaotong-Liverpool Univ.
+      title: "Advanced Bookkeeping in Reasoning"
+
 - date: 2026-04-08
   speaker: Dr Tom Lane
   affiliation: Newcastle Business School

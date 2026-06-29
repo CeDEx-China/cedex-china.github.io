@@ -63,11 +63,29 @@
   members:
     - name: Fangzhe Gu
       role: PhD Student
-      affiliation: School of Economics, UNNC
+      stage: First-Year
+      enrollment_year: 2025
+      affiliation: School of Mathematical Sciences, UNNC
       focus: Fermat-Weber problem, Optimization, Game theory, Graph theory
       email: Fangzhe.GU@nottingham.edu.cn
+    - name: Siqi Li
+      role: PhD Student
+      stage: Continuing
+      enrollment_year: 2025
+      affiliation: School of Economics, UNNC
+      focus: Microeconomics
+      email: Siqi.LI2@nottingham.edu.cn
+    - name: Zanbo Wang
+      role: PhD Student
+      stage: Continuing
+      enrollment_year: 2024
+      affiliation: School of Economics, UNNC
+      focus: Microeconomics Theory, Game Theory, Environmental Economics
+      email: Zanbo.WANG@nottingham.edu.cn
     - name: Juncheng Zhang
       role: PhD Student
+      stage: Thesis Writer
+      enrollment_year: 2023
       affiliation: School of Economics, UNNC
       focus: Environmental economics
       email: Juncheng.ZHANG@nottingham.edu.cn
@@ -81,21 +99,11 @@
       affiliation: School of Economics, UNNC
       focus: Experimental economics, behavioural economics, social preference, prosocial behaviour
       email: Meiqi.Chen2@nottingham.edu.cn
-    - name: Siqi Li
-      role: PhD Student
-      affiliation: School of Economics, UNNC
-      focus: Microeconomics
-      email: Siqi.LI2@nottingham.edu.cn
     - name: Xian Zhang
       role: PhD Student
       affiliation: School of Economics, UNNC
       focus: Agricultural economics, development economics, tourism, poverty-relief policy
       email: Xian.Zhang@nottingham.edu.cn
-    - name: Zanbo Wang
-      role: PhD Student
-      affiliation: School of Economics, UNNC
-      focus: Microeconomics Theory, Game Theory, Environmental Economics
-      email: Zanbo.WANG@nottingham.edu.cn
 
 - group: Affiliated Faculty
   members:
