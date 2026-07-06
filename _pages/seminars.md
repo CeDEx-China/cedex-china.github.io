@@ -20,8 +20,18 @@ CeDEx China runs a regular Brown Bag seminar series during teaching semesters (t
   <div class="seminar-entry">
     <div class="seminar-date">{{ item.date | date: "%-d %b" }}</div>
     <div class="seminar-content">
+    {% if item.speakers %}
+      <div class="seminar-title">{{ item.event }}</div>
+      {% for s in item.speakers %}
+      <div class="seminar-speaker">
+        {{ s.name }}<span class="seminar-affiliation"> · {{ s.affiliation }}</span>
+        <div class="seminar-talk">"{{ s.title }}"</div>
+      </div>
+      {% endfor %}
+    {% else %}
       <div class="seminar-title">{{ item.title }}</div>
-      <div class="seminar-speaker">{{ item.speaker }}<span class="seminar-affiliation"> · {{ item.affiliation }}</span></div>
+      <div class="seminar-speaker">{{ item.speaker }}<span class="seminar-affiliation"> · {{ item.affiliation }}</span>{% if item.event %}<span class="seminar-event"> · {{ item.event }}</span>{% endif %}</div>
+    {% endif %}
     </div>
   </div>
 {% endfor %}
@@ -85,5 +95,20 @@ CeDEx China runs a regular Brown Bag seminar series during teaching semesters (t
 .seminar-affiliation {
   font-weight: 400;
   color: var(--global-text-color-light);
+}
+.seminar-event {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 0.75rem;
+  color: var(--global-theme-color);
+}
+.seminar-talk {
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--global-text-color-light);
+  margin: 0.05rem 0 0.35rem 0;
+  padding-left: 0.5rem;
+  border-left: 2px solid var(--global-divider-color);
 }
 </style>

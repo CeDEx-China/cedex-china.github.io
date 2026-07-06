@@ -31,6 +31,25 @@
     letter-spacing: -0.01em;
   }
 
+  /* ── Navbar alignment ────────────────────────────────────────────────── */
+  #navbar .navbar-collapse {
+    justify-content: flex-end;
+    text-align: right;
+  }
+  #navbar .navbar-nav {
+    margin-left: auto;
+  }
+  @media (max-width: 575.98px) {
+    #navbar .navbar-collapse {
+      text-align: left;
+    }
+    #navbar .navbar-nav {
+      margin-left: 0;
+      align-items: flex-start;
+      width: 100%;
+    }
+  }
+
   /* Nav links: Medium weight for UI clarity */
   #navbar .nav-link,
   #navbar .navbar-brand {
@@ -71,7 +90,7 @@
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
-      <a class="navbar-brand title " href="{{ site.baseurl }}/">
+      <a class="navbar-brand title " href="{{ site.baseurl }}/people/">
         {% if site.title == 'blank' %}
           {% if site.first_name %}
             <span class="font-weight-bold">
@@ -92,7 +111,7 @@
       <button
         class="navbar-toggler collapsed ml-auto"
         type="button"
-        data-toggle="collapse"
+        data-nav-toggle
         data-target="#navbarNav"
         aria-controls="navbarNav"
         aria-expanded="false"
@@ -138,7 +157,7 @@
                     href="#"
                     id="navbarDropdown"
                     role="button"
-                    data-toggle="dropdown"
+                    data-nav-dropdown-toggle
                     aria-haspopup="true"
                     aria-expanded="false"
                   >

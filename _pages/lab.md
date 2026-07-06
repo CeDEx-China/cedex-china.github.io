@@ -3,22 +3,71 @@ title: Lab
 permalink: /lab/
 nav: true
 nav_order: 6
+nav_url: https://cedex-china.github.io/cedex-lab/
 ---
 
 CeDEx Lab studies how people make decisions through controlled experiments.
 
-<ul class="nav nav-tabs mt-4" id="labTabs" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link active" id="participants-tab" data-toggle="tab" href="#participants" role="tab" aria-controls="participants" aria-selected="true">For Participants</a>
+<style>
+.cedex-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin-top: 1.5rem;
+  border-bottom: 2px solid var(--global-divider-color, #e0e0e0);
+  padding-bottom: 0;
+  list-style: none;
+  padding-left: 0;
+}
+.cedex-tabs li {
+  margin-bottom: -2px;
+}
+.cedex-tab-btn {
+  display: inline-block;
+  padding: 0.5rem 1.1rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--global-text-color-light, #777);
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-bottom: none;
+  border-radius: 6px 6px 0 0;
+  transition: all 0.2s ease;
+  user-select: none;
+  background: transparent;
+  text-decoration: none;
+}
+.cedex-tab-btn:hover {
+  color: var(--global-theme-color, #b509ac);
+  background: rgba(0,0,0,0.03);
+}
+.cedex-tab-btn.active {
+  color: var(--global-theme-color, #b509ac);
+  border-color: var(--global-divider-color, #e0e0e0);
+  border-bottom-color: var(--global-bg-color, #fff);
+  background: var(--global-bg-color, #fff);
+}
+.cedex-panel {
+  display: none;
+  margin-top: 1.5rem;
+}
+.cedex-panel.active {
+  display: block;
+}
+</style>
+
+<ul class="cedex-tabs" id="labTabs" role="tablist">
+  <li role="none">
+    <button class="cedex-tab-btn active" id="participants-tab" role="tab" aria-selected="true" data-tab="participants" onclick="switchLabTab('participants')">For Participants</button>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" id="experimenters-tab" data-toggle="tab" href="#experimenters" role="tab" aria-controls="experimenters" aria-selected="false">For Experimenters</a>
+  <li role="none">
+    <button class="cedex-tab-btn" id="experimenters-tab" role="tab" aria-selected="false" data-tab="experimenters" onclick="switchLabTab('experimenters')">For Experimenters</button>
   </li>
 </ul>
 
-<div class="tab-content mt-3" id="labTabContent">
+<div class="cedex-tab-content mt-3" id="labTabContent">
 
-<div class="tab-pane fade show active" id="participants" role="tabpanel" aria-labelledby="participants-tab" markdown="1">
+<div class="cedex-panel active" id="participants" role="tabpanel" aria-labelledby="participants-tab" markdown="1">
 
 ## Why Join
 
@@ -48,7 +97,7 @@ For questions, contact [CedexChina@nottingham.edu.cn](mailto:CedexChina@nottingh
 
 </div>
 
-<div class="tab-pane fade" id="experimenters" role="tabpanel" aria-labelledby="experimenters-tab" markdown="1">
+<div class="cedex-panel" id="experimenters" role="tabpanel" aria-labelledby="experimenters-tab" markdown="1">
 
 ## Book the Lab
 
@@ -63,3 +112,24 @@ For questions, contact [CedexChina@nottingham.edu.cn](mailto:CedexChina@nottingh
 </div>
 
 </div>
+
+<script>
+function switchLabTab(tabId) {
+  document.querySelectorAll('#labTabs .cedex-tab-btn').forEach(function(btn) {
+    btn.classList.remove('active');
+    btn.setAttribute('aria-selected', 'false');
+  });
+  document.querySelectorAll('#labTabContent .cedex-panel').forEach(function(panel) {
+    panel.classList.remove('active');
+  });
+  var activeBtn = document.querySelector('#labTabs [data-tab="' + tabId + '"]');
+  var activePanel = document.getElementById(tabId);
+  if (activeBtn) {
+    activeBtn.classList.add('active');
+    activeBtn.setAttribute('aria-selected', 'true');
+  }
+  if (activePanel) {
+    activePanel.classList.add('active');
+  }
+}
+</script>

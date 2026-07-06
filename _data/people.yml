@@ -1,4 +1,13 @@
-﻿- group: Leadership
+﻿# ==============================================================================
+# name 字段格式规范
+# - Leadership / Research Leads / Affiliated Faculty : 保留完整头衔前缀
+#   (Professor, Dr)
+# - PhD Students                              : 仅名字，无前缀
+# - External Fellows - role 含 "Professor"    : 使用 Professor 前缀
+# - External Fellows - 其他明确教职           : 使用 Dr 前缀
+# - Lab Management                            : 仅名字，无前缀
+# ==============================================================================
+- group: Leadership
   members:
     - name: Professor Chris Starmer
       role: Chair, CeDEx Director
@@ -63,11 +72,29 @@
   members:
     - name: Fangzhe Gu
       role: PhD Student
-      affiliation: School of Economics, UNNC
+      stage: First-Year
+      enrollment_year: 2025
+      affiliation: School of Mathematical Sciences, UNNC
       focus: Fermat-Weber problem, Optimization, Game theory, Graph theory
       email: Fangzhe.GU@nottingham.edu.cn
+    - name: Siqi Li
+      role: PhD Student
+      stage: Continuing
+      enrollment_year: 2025
+      affiliation: School of Economics, UNNC
+      focus: Microeconomics
+      email: Siqi.LI2@nottingham.edu.cn
+    - name: Zanbo Wang
+      role: PhD Student
+      stage: Continuing
+      enrollment_year: 2024
+      affiliation: School of Economics, UNNC
+      focus: Microeconomics Theory, Game Theory, Environmental Economics
+      email: Zanbo.WANG@nottingham.edu.cn
     - name: Juncheng Zhang
       role: PhD Student
+      stage: Thesis Writer
+      enrollment_year: 2023
       affiliation: School of Economics, UNNC
       focus: Environmental economics
       email: Juncheng.ZHANG@nottingham.edu.cn
@@ -81,21 +108,11 @@
       affiliation: School of Economics, UNNC
       focus: Experimental economics, behavioural economics, social preference, prosocial behaviour
       email: Meiqi.Chen2@nottingham.edu.cn
-    - name: Siqi Li
-      role: PhD Student
-      affiliation: School of Economics, UNNC
-      focus: Microeconomics
-      email: Siqi.LI2@nottingham.edu.cn
     - name: Xian Zhang
       role: PhD Student
       affiliation: School of Economics, UNNC
       focus: Agricultural economics, development economics, tourism, poverty-relief policy
       email: Xian.Zhang@nottingham.edu.cn
-    - name: Zanbo Wang
-      role: PhD Student
-      affiliation: School of Economics, UNNC
-      focus: Microeconomics Theory, Game Theory, Environmental Economics
-      email: Zanbo.WANG@nottingham.edu.cn
 
 - group: Affiliated Faculty
   members:
@@ -167,7 +184,7 @@
       affiliation: Wuhan University
       focus: Experimental economics
       email: LianXue721@163.com
-    - name: Dr Lingbo Huang
+    - name: Professor Lingbo Huang
       role: Professor of Economics; Fellow of CeDEx China
       affiliation: Shandong University
       focus: Experimental economics
@@ -197,6 +214,14 @@
       affiliation: Nanjing Audit University
       focus: Experimental economics
       email: xueheng.li@outlook.com
+    - name: Dr Jonathan Tan
+      role: Associate Chair (Academic), Associate Professor; Fellow of CeDEx China
+      affiliation: School of Social Sciences, Nanyang Technological University
+      focus: Behavioral Economics, Behavioral Game Theory
+      email: j.tan@ntu.edu.sg
+      link_cv: https://personal.ntu.edu.sg/j.tan/cv.pdf
+      link_web: https://personal.ntu.edu.sg/j.tan/
+      link_scholar: https://scholar.google.com/citations?user=Uj0fTlEAAAAJ
     - name: Dr Youzong Xu
       role: Assistant Professor in Economics; Fellow of CeDEx China
       affiliation: Department of Finance, Accounting and Economics, UNNC
@@ -207,10 +232,20 @@
       affiliation: Department of Finance, Accounting and Economics, UNNC
       focus: Economics
       email: Zhixian.Yu@nottingham.edu.cn
+    - name: Professor Yu (Hannah) Hao
+      role: Professor; Fellow of CeDEx China
+      affiliation: Ningbo University
+      focus: Biopsychosocial mechanisms of mental health, behavioural and computational psychopathology
+      email: hhao@sas.upenn.edu
+    - name: Professor Ming Gao
+      role: Professor; Fellow of CeDEx China
+      affiliation: Liaoning University
+      focus: Digital economy, platform economics, industrial organisation
+      email: gaomingecon@139.com
 
 - group: Lab Management
   members:
-    - name: Mr Xingchen Liu
+    - name: Xingchen Liu
       role: Senior Lab Manager
       affiliation: CeDEx China, UNNC
       focus: Laboratory operations and research coordination
