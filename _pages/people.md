@@ -88,8 +88,14 @@ CeDEx China brings together researchers, faculty members, and lab management wit
   font-size: 1rem;
   font-weight: 700;
   color: var(--global-theme-color, #b509ac);
-  margin: 1.5rem 0 0.15rem 0;
-  padding-bottom: 0.15rem;
+  margin: 1.5rem 0 0.5rem 0;
+  padding-bottom: 0;
+}
+.cedex-person-grid + .cedex-stage-heading {
+  margin-top: 1.5rem;
+}
+.cedex-person-grid + .cedex-person-grid {
+  margin-top: 0.5rem;
 }
 </style>
 
