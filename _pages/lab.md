@@ -3,6 +3,7 @@ title: Lab
 permalink: /lab/
 nav: true
 nav_order: 6
+nav_url: https://cedex-china.github.io/cedex-lab/
 ---
 
 CeDEx Lab studies how people make decisions through controlled experiments.
